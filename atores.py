@@ -106,7 +106,8 @@ class Passaro(Ator):
         o status dos Passaro deve ser alterado para destruido, bem como o seu caracter
 
         """
-        pass
+        if self.y <= 0:
+            self.status = DESTRUIDO
 
     def calcular_posicao(self, tempo):
         """
